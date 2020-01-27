@@ -1,0 +1,36 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "see https://qiita.com/TsutomuNakamura/items/72d8cf9f07a5a30be048",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takashno/learn-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takashno/learn-react/issues"
+  },
+  "homepage": "https://github.com/takashno/learn-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
