@@ -23,8 +23,9 @@ export default {
     ]
   },
 
+  // どのWebpackが拡張子を対象とするかどうか
   resolve: {
-    extensions: ['.js','jsx']
+    extensions: ['.js','.jsx', '.css']
   },
 
   plugins: [

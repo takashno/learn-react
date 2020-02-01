@@ -1,5 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Header from './components/common/Header'
+import MainContainer from './components/common/MainContainer'
+import Footer from './components/common/Footer'
 
 class App extends React.Component {
 
@@ -15,8 +18,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" onChange = { this.onChange.bind(this) } />
-        <p>{ this.state.message }</p>
+        <Header/>
+        <MainContainer/>
+        <Footer/>
       </div>
     )
   }
