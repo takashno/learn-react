@@ -1,8 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Header from './components/common/Header'
-import MainContainer from './components/common/MainContainer'
-import Footer from './components/common/Footer'
+import Header from './components/common/organisms/Header'
+import Footer from './components/common/organisms/Footer'
+import Sidebar from './components/common/organisms/Sidebar'
+import MainContent from './components/common/organisms/MainContent'
 
 class App extends React.Component {
 
@@ -19,8 +20,16 @@ class App extends React.Component {
     return (
       <div>
         <Header/>
-        <MainContainer/>
-        <Footer/>
+        <div className="row">
+          <div className="col-2">
+            <Sidebar/>
+          </div>
+          <div className="col-10">
+            <MainContent/>
+            <Footer/>
+          </div>
+        </div>
+        
       </div>
     )
   }

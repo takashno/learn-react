@@ -3,7 +3,7 @@ import React from "react";
 export default class Sidebar extends React.Component {
   render() {
     return (
-      <aside id="sidebar">
+      <aside id="sidebar" style={{backgroundColor: "lightgreen", height: "100%"}}>
         <ul class="list-unstyled">
             <li>
                 <a href="#submenuReport" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
