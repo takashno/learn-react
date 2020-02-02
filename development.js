@@ -44,6 +44,11 @@ export default {
     extensions: ['.js','.jsx', '.css']
   },
 
+  devServer: {
+    // 正直よくわかっていないが、react-router がこいつをTrueにしないと機能しない
+    historyApiFallback: true,
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: src + '/index.html',

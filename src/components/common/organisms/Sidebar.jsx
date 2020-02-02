@@ -1,10 +1,11 @@
 import React from "react";
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 export default class Sidebar extends React.Component {
   render() {
     return (
       <aside id="sidebar" style={{backgroundColor: "lightgreen", height: "100%"}}>
-        <ul class="list-unstyled">
+        <ul>
             <li>
                 <a href="#submenuReport" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <i class="fas fa-calendar-check"></i>
@@ -18,7 +19,7 @@ export default class Sidebar extends React.Component {
                         <a href="./report/list.html">管理</a>
                     </li>
                     <li>
-                        <a href="./report/search.html">検索</a>
+                        <Link to='/report_search'>検索</Link>
                     </li>
                 </ul>
             </li>
@@ -41,14 +42,6 @@ export default class Sidebar extends React.Component {
                         <a href="#">集計</a>
                     </li>
                 </ul>
-            </li>
-        </ul>
-        <ul class="list-unstyled sticky-sidebar-bottom">
-            <li>
-                <a href="#" id="sidebarCollapse">
-                    <i class="fas fa-chevron-left"></i>
-                    <span class="CTAs">Collapse sidebar</span>
-                </a>
             </li>
         </ul>
       </aside>
